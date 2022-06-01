@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment2"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/myGymFragment"
+        android:icon="@drawable/ic_gym"
+        android:title="My GYM" />
+    <item
+        android:id="@+id/GYMBuddyFragment"
+        android:icon="@drawable/ic_buddy"
+        android:title="GYM Buddy" />
+
+    <item
+        android:id="@+id/userActivityFragment"
+        android:icon="@drawable/ic_actiivity"
+        android:title="Activities" />
+</menu>

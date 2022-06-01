@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtScheduledWorkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/scheduled_workout"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/txtChatGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/chat_group"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+    <TextView
+        android:id="@+id/txtFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/feed"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+    <TextView
+        android:id="@+id/txtAchivements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/achievements"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/profile"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+    <TextView
+        android:id="@+id/txtNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/notification"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+    <TextView
+        android:id="@+id/txtTermsCondion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/terms_amp_conditions"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+    <TextView
+        android:id="@+id/txtPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/black"
+        android:fontFamily="@font/avenir_next_bold"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingStart="@dimen/_40sdp"
+        android:text="@string/privacy_policy2"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>

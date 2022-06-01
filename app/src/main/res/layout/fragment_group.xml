@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".views.fragments.mainFragments.userFragments.GroupFragment">
+
+
+
+
+    <TextView
+        android:id="@+id/textNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:fontFamily="@font/avenir_next_bold"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/_4sdp"
+        android:text="@string/oops_nyou_have_not_n_created_any_nfeed_yet2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btncreatGroup"
+        style="@style/mainButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNoFound"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/main_btn_selected_bg"
+        android:fontFamily="@font/avenir_next_medium"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/create_group"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="visible" />
+
+</RelativeLayout>

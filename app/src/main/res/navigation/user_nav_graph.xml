@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav_graph"
+    app:startDestination="@id/profileCompletionFragment">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_gymListFragment"
+            app:destination="@id/gymListFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_blankFragment"
+            app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_scheduleWorkOutFragment"
+            app:destination="@id/scheduleWorkOutFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_achievementFragment"
+            app:destination="@id/achievementFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_userNotificationFragment"
+            app:destination="@id/userNotificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_privacyPolicyFragment2"
+            app:destination="@id/privacyPolicyFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_termsAndConditionFragment2"
+            app:destination="@id/termsAndConditionFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/myGymFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.MyGymFragment"
+        android:label="fragment_my_gym"
+        tools:layout="@layout/fragment_my_gym" >
+        <action
+            android:id="@+id/action_myGymFragment_to_myGymDetailFragment"
+            app:destination="@id/myGymDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GYMBuddyFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.GYMBuddyFragment"
+        android:label="fragment_g_y_m_buddy"
+        tools:layout="@layout/fragment_g_y_m_buddy" >
+        <action
+            android:id="@+id/action_GYMBuddyFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gymListFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.GymListFragment"
+        android:label="fragment_gym_list"
+        tools:layout="@layout/fragment_gym_list" >
+        <action
+            android:id="@+id/action_gymListFragment_to_gymDetailFragment"
+            app:destination="@id/gymDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gymDetailFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.GymDetailFragment"
+        android:label="fragment_gym_detail"
+        tools:layout="@layout/fragment_gym_detail" >
+        <action
+            android:id="@+id/action_gymDetailFragment_to_myGymFragment"
+            app:destination="@id/myGymFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myGymDetailFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.MyGymDetailFragment"
+        android:label="fragment_my_gym_detail"
+        tools:layout="@layout/fragment_my_gym_detail" >
+        <action
+            android:id="@+id/action_myGymDetailFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.UserDetailFragment"
+        android:label="fragment_user_detail"
+        tools:layout="@layout/fragment_user_detail" >
+        <action
+            android:id="@+id/action_userDetailFragment_to_setTimePlaceFragment"
+            app:destination="@id/setTimePlaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setTimePlaceFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.SetTimePlaceFragment"
+        android:label="fragment_set_time_place"
+        tools:layout="@layout/fragment_set_time_place" >
+        <action
+            android:id="@+id/action_setTimePlaceFragment_to_myGymFragment"
+            app:destination="@id/myGymFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userActivityFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.UserActivityFragment"
+        android:label="fragment_user_activity"
+        tools:layout="@layout/fragment_user_activity" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.zat.vib.views.fragments.mainFragments.BlankFragment2"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_blank2" >
+        <action
+            android:id="@+id/action_blankFragment2_to_createGroupFragment"
+            app:destination="@id/createGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createGroupFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.CreateGroupFragment"
+        android:label="fragment_create_group"
+        tools:layout="@layout/fragment_create_group" >
+        <action
+            android:id="@+id/action_createGroupFragment_to_createdGroupsFragment"
+            app:destination="@id/createdGroupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createdGroupsFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.CreatedGroupsFragment"
+        android:label="fragment_created_groups"
+        tools:layout="@layout/fragment_created_groups" >
+        <action
+            android:id="@+id/action_createdGroupsFragment_to_groupDetailFragment"
+            app:destination="@id/groupDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupDetailFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.GroupDetailFragment"
+        android:label="fragment_group_detail"
+        tools:layout="@layout/fragment_group_detail" >
+        <action
+            android:id="@+id/action_groupDetailFragment_to_editGroupFragment"
+            app:destination="@id/editGroupFragment" />
+        <action
+            android:id="@+id/action_groupDetailFragment_to_addParticipantFragment"
+            app:destination="@id/addParticipantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editGroupFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.EditGroupFragment"
+        android:label="fragment_edit_group"
+        tools:layout="@layout/fragment_edit_group" />
+    <fragment
+        android:id="@+id/addParticipantFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.AddParticipantFragment"
+        android:label="fragment_add_participant"
+        tools:layout="@layout/fragment_add_participant" >
+        <action
+            android:id="@+id/action_addParticipantFragment_to_groupDetailFragment"
+            app:destination="@id/groupDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleWorkOutFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.ScheduleWorkOutFragment"
+        android:label="fragment_schedule_work_out"
+        tools:layout="@layout/fragment_schedule_work_out" />
+    <fragment
+        android:id="@+id/achievementFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.AchievementFragment"
+        android:label="fragment_achievement"
+        tools:layout="@layout/fragment_achievement" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/userNotificationFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.UserNotificationFragment"
+        android:label="fragment_user_notification"
+        tools:layout="@layout/fragment_user_notification" />
+    <fragment
+        android:id="@+id/termsAndConditionFragment2"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.TermsAndConditionFragment"
+        android:label="fragment_terms_and_condition"
+        tools:layout="@layout/fragment_terms_and_condition" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment2"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/profileCompletionFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.ProfileCompletionFragment"
+        android:label="fragment_profile_completion"
+        tools:layout="@layout/fragment_profile_completion" >
+        <action
+            android:id="@+id/action_profileCompletionFragment_to_profileCompletion2Fragment"
+            app:destination="@id/profileCompletion2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileCompletion2Fragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.userFragments.ProfileCompletion2Fragment"
+        android:label="fragment_profile_completion2"
+        tools:layout="@layout/fragment_profile_completion2" >
+        <action
+            android:id="@+id/action_profileCompletion2Fragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+</navigation>

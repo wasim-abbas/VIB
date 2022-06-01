@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/administratorHomeFragment"
+        android:icon="@drawable/ic_buddy"
+        android:title="Members" />
+    <item
+        android:id="@+id/gymGraphFragment"
+        android:icon="@drawable/ic_bar_chart"
+        android:title="Graph" />
+    <item
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/ic_notification"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/administratorProfileFragment"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+</menu>

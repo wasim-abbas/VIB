@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gym_admistrator_nav_graph"
+    app:startDestination="@id/gymProfileFragment">
+
+    <fragment
+        android:id="@+id/administratorHomeFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.AdministratorHomeFragment"
+        android:label="fragment_administrator_home"
+        tools:layout="@layout/fragment_administrator_home" >
+        <action
+            android:id="@+id/action_administratorHomeFragment_to_termsAndConditionFragment"
+            app:destination="@id/termsAndConditionFragment" />
+        <action
+            android:id="@+id/action_administratorHomeFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_administratorHomeFragment_to_aboutUserFragment"
+            app:destination="@id/aboutUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gymProfileFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.GymProfileFragment"
+        android:label="fragment_gym_profile"
+        tools:layout="@layout/fragment_gym_profile" >
+        <action
+            android:id="@+id/action_gymProfileFragment_to_administratorHomeFragment2"
+            app:destination="@id/administratorHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gymGraphFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.GymGraphFragment"
+        android:label="fragment_gym_graph"
+        tools:layout="@layout/fragment_gym_graph" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/administratorProfileFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.AdministratorProfileFragment"
+        android:label="fragment_administrator_profile"
+        tools:layout="@layout/fragment_administrator_profile" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/termsAndConditionFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.TermsAndConditionFragment"
+        android:label="fragment_terms_and_condition"
+        tools:layout="@layout/fragment_terms_and_condition" />
+    <fragment
+        android:id="@+id/aboutUserFragment"
+        android:name="com.zat.vib.views.fragments.mainFragments.administratorFragment.AboutUserFragment"
+        android:label="fragment_about_user"
+        tools:layout="@layout/fragment_about_user" />
+</navigation>

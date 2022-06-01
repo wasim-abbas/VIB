@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/llNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_4sdp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            style="@style/Circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/girl_img" />
+
+        <TextView
+            android:id="@+id/txtGymName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_toRightOf="@id/profileImage"
+            android:fontFamily="@font/avenir_next_medium"
+            android:text="@string/lawrence"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_toRightOf="@id/txtGymName"
+            android:fontFamily="@font/avenir_next_medium"
+            android:text="@string/just_now"
+            android:textAlignment="textEnd"
+            android:textColor="@color/Grey"
+            android:textSize="@dimen/_8ssp" />
+
+        <TextView
+            android:id="@+id/txtDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtGymName"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_38sdp"
+            android:layout_toRightOf="@id/profileImage"
+            android:fontFamily="@font/avenir_next_medium"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/justin_rhyss_has_started_hi_session"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llNotification"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/btnEditFeed"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:background="@drawable/main_btn_selected_bg"
+            android:fontFamily="@font/avenir_next_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/accept"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/btnDeleteFeed"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_bg"
+            android:fontFamily="@font/avenir_next_medium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/reject"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/llButton"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@color/white" />
+
+
+</RelativeLayout>
